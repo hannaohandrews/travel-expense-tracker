@@ -3,8 +3,16 @@
 <%= render @expense_tracker %>
 
 <div>
-  <%= link_to "Edit this expense tracker", edit_expense_tracker_path(@expense_tracker) %> |
-  <%= link_to "Back to expense trackers", expense_trackers_path %>
-
-  <%= button_to "Destroy this expense tracker", @expense_tracker, method: :delete %>
+  <%= link_to "Edit", edit_expense_tracker_path(@expense_tracker), class:"btn btn-warning" %>
 </div>
+</br>
+
+<div>
+  <%= button_to "Delete", @expense_tracker, method: :delete, class:"btn btn-danger"%>
+</div>
+
+</br>
+<div>
+  <%= link_to "Back to expense trackers", expense_trackers_path, class:"btn btn-dark"  %>
+</div>
+

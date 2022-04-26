@@ -2,9 +2,12 @@
 
 <%= render "form", expense_tracker: @expense_tracker %>
 
-<br>
-
+</br>
 <div>
-  <%= link_to "Show this expense tracker", @expense_tracker %> |
-  <%= link_to "Back to expense trackers", expense_trackers_path %>
+  <%= link_to "Show this expense tracker", @expense_tracker, class:"btn btn-outline-success" %>
 </div>
+
+</br>
+<div>  <%= link_to "Back to expense trackers", expense_trackers_path, class:"btn btn-dark"  %>
+</div>
+
